@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is array Example component</h1>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor="let employee of employees" >
+        <td>{{employee.eid}}</td>
+        <td>{{employee.ename}}</td>
+        <td>{{employee.esalary}}</td>
+
+
+    </tr>
+
+    Enter no: <input type="number" name="no" [(ngModel)]="no"><br><br>
+    Cube : <input type="number" name="cube" [(ngModel)]="cube"><br><br>
+    <button (click)="calculate()">Calculate</button>
+
+
+
+</table>
+</body>
+</html>
