@@ -11,9 +11,9 @@ import { MathsService } from '../maths.service';
   styleUrl: './arrayex.component.css'
 })
 export class ArrayexComponent {
-  employee1:Employee = new Employee(1,"sagar",10000);
+  employee1:Employee = new Employee(1,"Sagar",10000);
   employee2:Employee = new Employee(2,"Abhi",10000);
-  employee3:Employee = new Employee(3,"urmi",10000);
+  employee3:Employee = new Employee(3,"Tejas",10000);
 
   employees:Employee[]=[this.employee1,this.employee2,this.employee3];
   constructor(private obj:MathsService){
